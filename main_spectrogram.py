@@ -61,7 +61,7 @@ cbar1.set_label('SPL [dB]')
 ax2 = fig.add_subplot(313)
 
 # データをプロット
-for j in range(len(fft_array[:,1])):
+for j in range(len(fft_array[1,:])-1)):
     plt.plot(fft_array[:,j], marker=",", linestyle = "", color="k")
 
 plt.plot(fft_mean, marker=",", color="r", linewidth = 0.3)
